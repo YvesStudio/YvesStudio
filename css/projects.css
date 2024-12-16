@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249, 254, 243, 0.9);
+}
+
+/* 导航栏样式 */
+.header {
+    mix-blend-mode: difference;
+    color: white; /* 当使用 difference 混合模式时，文字颜色需要设置为白色 */
+}
+
+.header .logo,
+.header .nav-links a {
+    color: white;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 2.5rem;  /* 保持水平内边距 */
+    margin: 0;
+    min-height: 100vh;  /* 确保容器占满视口高度 */
+    display: flex;      /* 使用flex布局 */
+    align-items: center;/* 垂直居中 */
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-end;
+    width: calc(100% - 5rem);
+    margin-left: auto;
+    padding: 0;
+    align-items: center;  /* 确保grid内部元素也垂直居中 */
+}
+
+.grid-item {
+    flex: 0 1 calc(25% - 0.375rem);  /* 调整计算：(0.5rem * 3) ÷ 4 = 0.375rem */
+    max-width: 256.8px;  /* 设置最大宽度为目标宽度 */
+    margin: 0;  /* 确保没有额外的margin */
+    position: relative;  /* 添加相对定位 */
+}
+
+.grid-item.wide-card {
+    flex: 0 1 calc(50% - 0.375rem);  /* 占用两倍宽度 */
+    max-width: 513.6px;  /* 256.8px * 2 */
+}
+
+.card-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.card-wrapper:hover .card {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.card-wrapper:hover .card-title p::after {
+    transform: scaleX(1);
+}
+
+.card {
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.card:hover ~ .card-title p::after {
+    transform: scaleX(1);  /* 当卡片悬停时激活所有文字的下划线 */
+}
+
+.grid-item .card-img-top {
+    width: 100%;
+    aspect-ratio: 4 / 5;  /* 保持4:5比例 */
+    object-fit: cover;    /* 保持图片比例并填充容器 */
+    border-radius: 10px;     /* 添加卡片图片下方圆角 */
+}
+
+.grid-item.wide-card .card-img-top {
+    aspect-ratio: 8 / 5;  /* 宽卡片的比例 */
+}
+
+.card-title {
+    position: absolute;
+    bottom: -6.5rem;  /* 将标题放在卡片下方 */
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    z-index: 2;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.card-style {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    position: relative;  /* 为下划线添加相对定位 */
+}
+
+.card-style p {
+    margin: 0;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;  /* 使元素宽度适应内容 */
+    width: fit-content;     /* 确保宽度只包含文字 */
+}
+
+.card-style p::after {
+    content: '';
+    position: absolute;
+    width: 100%;           /* 现在是相对于文字宽度的100% */
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.card-style:hover ~ .card::after {
+    transform: scaleX(1); /* 可以改回1，因为现在是相对于文字宽度 */
+}

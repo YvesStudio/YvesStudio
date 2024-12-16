@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249, 254, 243, 0.9);
+}
+
+.container {
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.full-width-card {
+    width: 100%;
+    padding-right: 1rem;
+    margin-left: 0.3rem;
+}
+
+.full-width-card .card-img-top {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-card .card-body {
+    padding: 20px;
+}
+
+.full-width-card .card-title {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.full-width-card .card-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.grid-item {
+    width: calc(20% - 8px);
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+/* 为每列添加不同的顶部间距 */
+.grid-item:nth-child(5n+1) {
+    margin-top: 0;
+}
+
+.grid-item:nth-child(5n+2) {
+    margin-top: 24px;
+}
+
+.grid-item:nth-child(5n+3) {
+    margin-top: 48px;
+}
+
+.grid-item:nth-child(5n+4) {
+    margin-top: 16px;
+}
+
+.grid-item:nth-child(5n+5) {
+    margin-top: 32px;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Extra large devices */
+@media (max-width: 1400px) {
+    .grid-item {
+        width: calc(25% - 8px);
+    }
+
+    /* Reset previous margins */
+    .grid-item:nth-child(n) {
+        margin-top: 0;
+    }
+
+    /* 4列布局的顶部间距 */
+    .grid-item:nth-child(4n+2) {
+        margin-top: 32px;
+    }
+
+    .grid-item:nth-child(4n+3) {
+        margin-top: 16px;
+    }
+
+    .grid-item:nth-child(4n+4) {
+        margin-top: 48px;
+    }
+}
+
+/* Large devices */
+@media (max-width: 1200px) {
+    .grid-item {
+        width: calc(33.333% - 8px);
+    }
+
+    /* Reset previous margins */
+    .grid-item:nth-child(n) {
+        margin-top: 0;
+    }
+
+    /* 3列布局的顶部间距 */
+    .grid-item:nth-child(3n+2) {
+        margin-top: 24px;
+    }
+
+    .grid-item:nth-child(3n+3) {
+        margin-top: 48px;
+    }
+}
+
+/* Medium devices */
+@media (max-width: 992px) {
+    .grid-item {
+        width: calc(50% - 8px);
+    }
+
+    /* Reset previous margins */
+    .grid-item:nth-child(n) {
+        margin-top: 0;
+    }
+
+    /* 2列布局的顶部间距 */
+    .grid-item:nth-child(2n+2) {
+        margin-top: 32px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 576px) {
+    .grid-item {
+        width: 100%;
+        padding: 4px 0;
+        margin-top: 0 !important;
+    }
+}

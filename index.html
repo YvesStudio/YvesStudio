@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziyu Liu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+
+<body>
+    <div id="toplay">
+        <svg id="svgContainer">
+            <defs>
+                <mask id="blob-mask">
+                    <rect width="100%" height="100%" fill="white"/>
+                    <path id="blob-mask-path" d="M0 0" fill="black"/>
+                </mask>
+            </defs>
+            <rect width="100%" height="100%" fill="#f9fef3" mask="url(#blob-mask)"/>
+        </svg>
+    </div>
+    <div id="overlay">
+        <video id="intro-video" muted playsinline>
+            <source src="assets/DQE.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="header">
+        <h1 class="logo init-play-path">Ziyu Liu</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Fashion</a>
+            <a href="#portfolio">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="vertical-text">TECHNOLOGY FASHION CREATOR</div>
+
+        <div class="project-list">
+            <div class="project-item">
+                <span class="project-number">00</span>
+                <span class="project-name"><a href="#">View all projects</a></span>
+                <span class="dotted-line"></span>
+            </div>
+
+            <div class="project-item">
+                <span class="project-number">01 <b>Fashion</b> | Technology</span>
+                <span class="project-name"><a href="yellow-crane-tower-and-I.html">The Yellow Crane Tower and I</a></span>
+                <span class="dotted-line"></span>
+            </div>
+
+            <div class="project-item">
+                <span class="project-number">02 <b>Fashion</b> | Technology</span>
+                <span class="project-name"><a href="recluse.html">RECLUSE</a></span>
+                <span class="dotted-line"></span>
+            </div>
+
+            <div class="project-item">
+                <span class="project-number">03 Fashion | <b>Technology</b></span>
+                <span class="project-name"><a href="igem.html">Mr. Monkeyeast</a></span>
+                <span class="dotted-line"></span>
+            </div>
+
+            <div class="project-item">
+                <span class="project-number">04 Fashion | <b>Technology</b></span>
+                <span class="project-name"><a href="ihobby.html">Hobby+ Creative Culture Studio</a></span>
+                <span class="dotted-line"></span>
+            </div>
+
+            <div class="project-item">
+                <span class="project-number">05 Fashion | <b>Technology</b></span>
+                <span class="project-name"><a href="3d.html">3D Visualization of Human Nasal Internal Anatomy</a></span>
+                <span class="dotted-line"></span>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
