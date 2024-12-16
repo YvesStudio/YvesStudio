@@ -10,30 +10,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 
 <body>
-    <div id="toplay">
-        <svg id="svgContainer">
-            <defs>
-                <mask id="blob-mask">
-                    <rect width="100%" height="100%" fill="white" />
-                    <path id="blob-mask-path" d="M0 0" fill="black" />
-                </mask>
-            </defs>
-            <rect width="100%" height="100%" fill="#f9fef3" mask="url(#blob-mask)" />
-        </svg>
-    </div>
-    <div id="overlay">
-        <video id="intro-video" muted playsinline>
-            <source src="assets/DQE.mp4" type="video/mp4">
-        </video>
-    </div>
+
     <header class="header">
-        <h1 class="logo init-play-path"><a href="index.html">Ziyu Liu</a></h1>
+        <h1 class="logo"><a href="index.html">Ziyu Liu</a></h1>
         <nav class="nav-links">
             <a href="home.html">Home</a>
             <a href="projects.html">Fashion</a>
@@ -85,7 +70,6 @@
             </div>
         </div>
     </div>
-
     <script src="js/main.js"></script>
 </body>
 
