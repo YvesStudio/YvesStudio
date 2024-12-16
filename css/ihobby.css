@@ -8,13 +8,18 @@ body {
     background-color: rgba(249, 254, 243, 0.9);
 }
 
+.header{
+    mix-blend-mode:difference;
+    color: #f9fef3;
+}
+
+
 /* Ziyu Logo styles */
 .logo {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
-    padding-left: 18rem;
     transition: all 1s ease-in-out;
 }
 

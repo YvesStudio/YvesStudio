@@ -27,8 +27,6 @@ body {
     box-sizing: border-box;
     background-color: transparent;
     z-index: 1;
-    mix-blend-mode:difference;
-    color: #f9fef3;
 }
 
 .header:has(.init-play-path) .nav-links,
@@ -76,7 +74,8 @@ body {
     left: auto;
     transform: none;
     color: inherit;
-    white-space: nowrap;
+    white-space: nowrap;    
+    mix-blend-mode:difference;
 }
 
 .nav-links {
@@ -111,6 +110,20 @@ body {
 
 .nav-links a:hover::after {
     transform: scaleX(1);  /* 悬停时显示下划线 */
+}
+
+/* 移除链接默认样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
 }
 
 /* Main content styles */
