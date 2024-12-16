@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(249, 254, 243, 0.9);
+}
+
+.header{
+    mix-blend-mode:difference;
+    color: #f9fef3;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.full-width-card {
+    width: 100%;
+}
+
+.full-width-card .card-img-top {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+
+.card-title {
+    font-size: 12px;    
+    text-align: center;
+}
