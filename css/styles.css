@@ -224,7 +224,6 @@ a:hover {
     transform: translate(-50%, -50%) scale(1);
     width: 100vmax;
     height: 100vmax;
-    background-color: #FDF6F0;
     z-index: 1;
     display: none;
     opacity: 0;
