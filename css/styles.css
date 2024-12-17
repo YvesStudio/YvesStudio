@@ -11,8 +11,16 @@ body {
     /* 现代无衬线字体 */
     letter-spacing: -0.02em;
     /* 紧凑的字间距 */
-
+    /* 添加了 flexbox 布局来确保 footer 始终在底部：body 设置为 display: flex 使用 flex-direction: column 确保内容垂直排列 */
+    display: flex;
+    flex-direction: column
 }
+
+.bs-icon-circle:hover .bi {
+    fill: red;
+    transition: fill 0.3s ease;
+}
+
 
 /* Header styles */
 .header {
@@ -228,7 +236,9 @@ a:hover {
     border-radius: 0%;
     transform-origin: center;
     overflow: hidden;
-    isolation: isolate
+    isolation: isolate;
+    /* 开局的蒙版，以防看到下面的内容 */
+    background-color: black;
 }
 
 #intro-video {
@@ -286,6 +296,27 @@ a:hover {
     bottom: 0;
     right: 0;
     transform-origin: bottom right;
+}
+
+.container {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.3s; /* 等待overlay加载的时间 */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    /* 确保overlay在container之上 */
+    z-index: 1000;
+    position: fixed;
 }
 
 /* Responsive adjustments */
