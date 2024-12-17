@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Projects</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet">
@@ -13,9 +17,9 @@
 
 <body>
     <header class="header">
-        <h1 class="logo">Ziyu Liu</h1>
+        <h1 class="logo"><a href="index.html">Ziyu Liu</a></h1>
         <nav class="nav-links">
-            <a href="index.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="projects.html">Fashion</a>
             <a href="yellow-crane-tower-and-I.html">The Yellow Crane Tower and I</a>
             <a href="recluse.html">RECLUSE</a>
@@ -25,41 +29,54 @@
 
     <div class="vertical-text">TECHNOLOGY FASHION CREATOR</div>
 
-    <div class="container">
-        <div class="grid">
-            <div class="grid-item">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="assets/project-1.jpg" alt="Project 1" class="card-img-top" />
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-3 grid-item">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="assets/project-1.jpg" alt="Project 1" class="card-img-top" />
+                            </div>
+                            <div class="card-title">
+                                <a href="yellow-crane-tower-and-I.html" class="card-style">
+                                    <p>The Yellow Crane Tower and I</p>
+                                    <p>2022</p>
+                                    <p>China Fashion Young Talent Award</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-title">
-                        <a href="yellow-crane-tower-and-I.html" class="card-style">
-                            <p>The Yellow Crane Tower and I</p>
-                        </a>
+
+                    <div class="col-lg-6">
+                        <div class="card-wrapper wide-card">
+                            <div class="card">
+                                <img src="assets/project-2.jpg" alt="Project 2" class="card-img-top" />
+                            </div>
+                            <div class="card-title">
+                                <a href="recluse.html" class="card-style">
+                                    <p>Recluse</p>
+                                    <p>2021</p>
+                                    <p>Rebel Tartan Climate Change Sino-British Project</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="grid-item wide-card">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="assets/project-2.jpg" alt="Project 2" class="card-img-top" />
-                    </div>
-                    <div class="card-title">
-                        <a href="recluse.html" class="card-style">
-                            <p>Recluse</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="assets/project-3.jpg" alt="project 3" class="card-img-top" />
-                    </div>
-                    <div class="card-title">
-                        <a href="eve.html" class="card-style">
-                            <p>EVE</p>
-                        </a>
+
+                    <div class="col-lg-3">
+                        <div class="card-wrapper grid-item">
+                            <div class="card">
+                                <img src="assets/project-3.jpg" alt="project 3" class="card-img-top" />
+                            </div>
+                            <div class="card-title">
+                                <a href="eve.html" class="card-style">
+                                    <p>EVE</p>
+                                    <p>2021</p>
+                                    <p>Major Coursework Project</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,7 +85,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 
 </html>

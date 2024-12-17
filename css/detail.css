@@ -21,15 +21,17 @@ body {
 
 .full-width-card {
     width: 100%;
+    /* 为了和服装项目详情页的瀑布流右侧对齐 */
     padding-right: 1rem;
+    /* 为了和服装项目详情页的瀑布流左侧对齐，要用margin */
     margin-left: 0.3rem;
 }
 
 .full-width-card .card-img-top {
     width: 100%;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
 }
 
 .full-width-card .card-body {
@@ -81,7 +83,7 @@ body {
     transform: translateY(-5px);
 }
 
-.card-img-top {
+.grid-item.card-img-top {
     width: 100%;
     height: auto;
     object-fit: cover;

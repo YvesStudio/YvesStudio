@@ -19,36 +19,12 @@ body {
     color: white;
 }
 
-.container {
-    max-width: 100%;
+.container-fluid {
     padding: 0 2.5rem;  /* 保持水平内边距 */
     margin: 0;
     min-height: 100vh;  /* 确保容器占满视口高度 */
     display: flex;      /* 使用flex布局 */
     align-items: center;/* 垂直居中 */
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: flex-end;
-    width: calc(100% - 5rem);
-    margin-left: auto;
-    padding: 0;
-    align-items: center;  /* 确保grid内部元素也垂直居中 */
-}
-
-.grid-item {
-    flex: 0 1 calc(25% - 0.375rem);  /* 调整计算：(0.5rem * 3) ÷ 4 = 0.375rem */
-    max-width: 256.8px;  /* 设置最大宽度为目标宽度 */
-    margin: 0;  /* 确保没有额外的margin */
-    position: relative;  /* 添加相对定位 */
-}
-
-.grid-item.wide-card {
-    flex: 0 1 calc(50% - 0.375rem);  /* 占用两倍宽度 */
-    max-width: 513.6px;  /* 256.8px * 2 */
 }
 
 .card-wrapper {
@@ -57,7 +33,7 @@ body {
 }
 
 .card-wrapper:hover .card {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 10;
 }
 
@@ -73,7 +49,6 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.1);
     z-index: 10;
 }
 
@@ -88,8 +63,11 @@ body {
     border-radius: 10px;     /* 添加卡片图片下方圆角 */
 }
 
-.grid-item.wide-card .card-img-top {
-    aspect-ratio: 8 / 5;  /* 宽卡片的比例 */
+.wide-card .card-img-top {
+    aspect-ratio: 8.3 / 5;  /* 宽卡片的比例 */
+    width: 100%;
+    object-fit: cover;    /* 保持图片比例并填充容器 */
+    border-radius: 10px;     /* 添加卡片图片下方圆角 */
 }
 
 .card-title {
