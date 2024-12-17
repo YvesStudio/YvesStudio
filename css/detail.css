@@ -31,7 +31,7 @@ body {
     width: 100%;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .full-width-card .card-body {
@@ -77,13 +77,14 @@ body {
 
 .card {
     transition: transform 0.2s;
+    border-radius: 8px;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-.grid-item.card-img-top {
+.grid-item .card-img-top {
     width: 100%;
     height: auto;
     object-fit: cover;
