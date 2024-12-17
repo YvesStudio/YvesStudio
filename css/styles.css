@@ -228,8 +228,8 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 100vmax;
-    height: 100vmax;
+    width: 100vw;
+    height: 100vh;
     z-index: 1;
     display: none;
     opacity: 0;
@@ -302,6 +302,12 @@ a:hover {
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
     animation-delay: 0.3s; /* 等待overlay加载的时间 */
+}
+
+#overlay img{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.4s; /* 等待overlay加载的时间 */
 }
 
 @keyframes fadeIn {
