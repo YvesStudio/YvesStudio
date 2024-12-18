@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* padding第一位是top，第二位是left */
     padding: 2rem 2.5rem;
     position: fixed;
     width: calc(100% - 5rem);
@@ -136,11 +137,12 @@ a:hover {
 
 .vertical-text {
     position: fixed;
-    left: 2rem;
-    top: 30%;
+    /* 为了和2.5rem的header高度对齐 */
+    left: 3.2rem;
+    top: 33%;
     transform: rotate(-90deg) translateX(-50%);
     transform-origin: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     white-space: nowrap;
