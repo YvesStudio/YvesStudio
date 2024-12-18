@@ -139,7 +139,7 @@ a:hover {
     position: fixed;
     /* 为了和2.5rem的header高度对齐 */
     left: 3.2rem;
-    top: 33%;
+    top: 31%;
     transform: rotate(-90deg) translateX(-50%);
     transform-origin: left;
     font-size: 0.8rem;
