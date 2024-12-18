@@ -303,7 +303,7 @@ a:hover {
 .container {
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards;
-    animation-delay: 0.3s; /* 等待overlay加载的时间 */
+    animation-delay: 5s; /* 等待overlay加载的时间 */
 }
 
 #overlay img{
