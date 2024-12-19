@@ -8,21 +8,10 @@ body {
     background-color: rgba(249, 254, 243, 0.9);
 }
 
-/* 导航栏样式 */
-.header {
-    mix-blend-mode: difference;
-    color: white; /* 当使用 difference 混合模式时，文字颜色需要设置为白色 */
-}
-
-.header .logo,
-.header .nav-links a {
-    color: white;
-}
-
 .container-fluid {
     padding: 0 2.5rem;  /* 保持水平内边距 */
     margin: 0;
-    min-height: 100vh;  /* 确保容器占满视口高度 */
+    min-height: 85vh;  /* 确保容器占满视口高度 !!!!需要调*/
     display: flex;      /* 使用flex布局 */
     align-items: center;/* 垂直居中 */
 }

@@ -8,11 +8,6 @@ body {
     background-color: rgba(249, 254, 243, 0.9);
 }
 
-.header{
-    mix-blend-mode:difference;
-    color: #f9fef3;
-}
-
 .container {
     max-width: 100%;
     padding: 16px;

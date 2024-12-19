@@ -29,7 +29,6 @@ body {
     align-items: center;
     /* padding第一位是top，第二位是left */
     padding: 2rem 2.5rem;
-    position: fixed;
     width: calc(100% - 5rem);
     top: 0;
     left: 0;
