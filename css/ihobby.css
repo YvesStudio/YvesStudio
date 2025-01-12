@@ -56,7 +56,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: none;
 }
 
 .card-img-top {
