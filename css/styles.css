@@ -16,9 +16,38 @@ body {
     flex-direction: column
 }
 
-.bs-icon-circle:hover .bi {
+/* 新的hover效果：当鼠标悬停在a元素上时，改变其内部svg的颜色 */
+.bs-icon-circle a:hover svg {
     fill: red;
-    transition: fill 0.3s ease;
+    color: red; /* 同时设置 color 属性，因为 SVG 使用了 currentColor */
+    transition: all 0.3s ease;
+}
+
+.bs-icon-circle {
+    position: relative;
+    display: inline-block;
+}
+
+.bs-icon-circle a {
+    position: relative;
+    display: inline-block;
+}
+
+.bs-icon-circle a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+
+.bs-icon-circle svg {
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
 }
 
 
