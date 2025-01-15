@@ -104,3 +104,9 @@ body {
 .card-style:hover ~ .card::after {
     transform: scaleX(1); /* 可以改回1，因为现在是相对于文字宽度 */
 }
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
