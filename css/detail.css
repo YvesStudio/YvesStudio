@@ -22,10 +22,16 @@ body {
     margin-left: 0.3rem;
 }
 
+.full-width-card,
+.full-width-card .card,
+.card {
+    box-shadow: none !important;
+}
+
 .full-width-card .card-img-top {
     width: 100%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     border-radius: 8px;
 }
 
