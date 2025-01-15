@@ -30,3 +30,8 @@ body {
     font-size: 12px;    
     text-align: center;
 }
+
+.card-title p {
+    margin-top: 5rem; /* 添加顶部边距 */
+    margin-bottom: 0; /* 保持底部边距为0 */
+}
